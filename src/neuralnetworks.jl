@@ -16,6 +16,15 @@ end
 # COST FUNCTION - the main function of the programme, outputs error function as well as gradient function.
 #
 
+# The parameters are:
+# nnParameters - a parameters vector including the constant, if you input wrong one, the function will suggest you the right size
+# inputLayerSize - if you have ten inputs, you put 10, easy?
+# hiddenLayerSize - this takes array of integers that suggests sizes of your hidden layers WITHOUT constants!!!!!
+# outputSize - if you have 10 labels, you will put 10
+# X - input data, do not include constant!
+# y - array which is 1 for the true label (in future, I will probably include a function that will transform one vector into this input)
+# lambda - regularization parameter
+
 function nnCostFunction(nnParameters, inputLayerSize::Integer, hiddenLayerSize::Array, outputSize::Integer, X::Array, y, lambda)
 
 
